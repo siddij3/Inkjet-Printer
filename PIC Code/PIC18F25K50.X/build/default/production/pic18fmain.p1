@@ -5,12 +5,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
 "4597
 [v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
-"8964
-[v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
-"8896
-[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
-"8825
-[v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
 "2793
 [v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
 "2945
@@ -18,87 +12,87 @@ Version 3.2 HI-TECH Software Intermediate Code
 "3055
 [v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
 [p mainexit ]
-"21 pic18fmain.c
+"20 pic18fmain.c
 [p x PLLSEL=PLL4X ]
-"22
+"21
 [p x CFGPLLEN=OFF ]
-"23
+"22
 [p x CPUDIV=NOCLKDIV ]
-"24
+"23
 [p x LS48MHZ=SYS24X4 ]
+"26
+[p x FOSC=XT ]
 "27
-[p x FOSC=ECHIO ]
-"28
 [p x PCLKEN=ON ]
-"29
+"28
 [p x FCMEN=OFF ]
-"30
+"29
 [p x IESO=OFF ]
-"33
+"32
 [p x nPWRTEN=OFF ]
+"33
+[p x BOREN=OFF ]
 "34
-[p x BOREN=SBORDIS ]
-"35
 [p x BORV=190 ]
-"36
+"35
 [p x nLPBOR=OFF ]
-"39
+"38
 [p x WDTEN=OFF ]
-"40
+"39
 [p x WDTPS=32768 ]
-"43
+"42
 [p x CCP2MX=RC1 ]
-"44
+"43
 [p x PBADEN=OFF ]
-"45
+"44
 [p x T3CMX=RC0 ]
-"46
+"45
 [p x SDOMX=RB3 ]
-"47
+"46
 [p x MCLRE=ON ]
-"50
+"49
 [p x STVREN=ON ]
+"50
+[p x LVP=OFF ]
 "51
-[p x LVP=ON ]
-"52
 [p x ICPRT=OFF ]
-"53
+"52
 [p x XINST=OFF ]
-"56
+"55
 [p x CP0=OFF ]
-"57
+"56
 [p x CP1=OFF ]
-"58
+"57
 [p x CP2=OFF ]
-"59
+"58
 [p x CP3=OFF ]
-"62
+"61
 [p x CPB=OFF ]
-"63
+"62
 [p x CPD=OFF ]
-"66
+"65
 [p x WRT0=OFF ]
-"67
+"66
 [p x WRT1=OFF ]
-"68
+"67
 [p x WRT2=OFF ]
-"69
+"68
 [p x WRT3=OFF ]
-"72
+"71
 [p x WRTC=OFF ]
-"73
+"72
 [p x WRTB=OFF ]
-"74
+"73
 [p x WRTD=OFF ]
-"77
+"76
 [p x EBTR0=OFF ]
-"78
+"77
 [p x EBTR1=OFF ]
-"79
+"78
 [p x EBTR2=OFF ]
-"80
+"79
 [p x EBTR3=OFF ]
-"83
+"82
 [p x EBTRB=OFF ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
@@ -5178,80 +5172,66 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdlib.h: 101: extern char * ltoa(char * buf, long val, int base);
 [; ;stdlib.h: 102: extern char * ultoa(char * buf, unsigned long val, int base);
 [; ;stdlib.h: 104: extern char * ftoa(float f, int * status);
-"98 pic18fmain.c
+[; ;signal.h: 35: extern void (* signal(int, void (*)(int)))(int);
+"100 pic18fmain.c
 [v _initialize `(v ~T0 @X0 1 ef ]
 {
-[; ;pic18fmain.c: 98: void initialize() {
+[; ;pic18fmain.c: 100: void initialize() {
 [e :U _initialize ]
 [f ]
-[; ;pic18fmain.c: 99: TRISA = 0;
-"99
-[e = _TRISA -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 100: TRISB = 0;
-"100
-[e = _TRISB -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 101: TRISC = 0;
+[; ;pic18fmain.c: 101: TRISA = 0x0;
 "101
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 103: ADCON0 = 0;
+[e = _TRISA -> -> 0 `i `uc ]
+[; ;pic18fmain.c: 102: TRISB = 0x0;
+"102
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;pic18fmain.c: 103: TRISC = 0x0;
 "103
-[e = _ADCON0 -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 104: ADCON1 = 0;
-"104
-[e = _ADCON1 -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 105: ADCON2 = 0;
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;pic18fmain.c: 105: PORTA = 0;
 "105
-[e = _ADCON2 -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 107: PORTA = 0;
-"107
 [e = _PORTA -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 108: PORTB = 0;
-"108
+[; ;pic18fmain.c: 106: PORTB = 0;
+"106
 [e = _PORTB -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 109: PORTC = 0;
-"109
+[; ;pic18fmain.c: 107: PORTC = 0;
+"107
 [e = _PORTC -> -> 0 `i `uc ]
-[; ;pic18fmain.c: 110: }
-"110
+[; ;pic18fmain.c: 108: }
+"108
 [e :UE 608 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"112
+"110
 [v _main `(i ~T0 @X0 1 ef2`i`**uc ]
 {
-[; ;pic18fmain.c: 112: int main(int argc, char** argv) {
+[; ;pic18fmain.c: 110: int main(int argc, char** argv) {
 [e :U _main ]
 [v _argc `i ~T0 @X0 1 r1 ]
 [v _argv `**uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;pic18fmain.c: 113: initialize();
-"113
+[; ;pic18fmain.c: 111: initialize();
+"111
 [e ( _initialize ..  ]
-[; ;pic18fmain.c: 115: while(1) {
-"115
+[; ;pic18fmain.c: 113: while(1) {
+"113
 [e :U 611 ]
 {
-[; ;pic18fmain.c: 116: PORTA = 0b11111111;
+[; ;pic18fmain.c: 114: PORTA = 0x00111111;
+"114
+[e = _PORTA -> -> 1118481 `l `uc ]
 "116
-[e = _PORTA -> -> 255 `i `uc ]
-[; ;pic18fmain.c: 117: PORTB = 0b11111111;
-"117
-[e = _PORTB -> -> 255 `i `uc ]
-[; ;pic18fmain.c: 118: PORTC = 0b11111111;
-"118
-[e = _PORTC -> -> 255 `i `uc ]
-"119
 }
 [e :U 610 ]
-"115
+"113
 [e $U 611  ]
 [e :U 612 ]
-[; ;pic18fmain.c: 119: }
-[; ;pic18fmain.c: 121: return (0);
-"121
+[; ;pic18fmain.c: 116: }
+[; ;pic18fmain.c: 118: return (0);
+"118
 [e ) -> 0 `i ]
 [e $UE 609  ]
-[; ;pic18fmain.c: 122: }
-"122
+[; ;pic18fmain.c: 119: }
+"119
 [e :UE 609 ]
 }

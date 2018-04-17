@@ -2,21 +2,21 @@
 # 1 "pic18fmain.c"
 
 
-# 21
+# 20
 #pragma config PLLSEL = PLL4X
 #pragma config CFGPLLEN = OFF
 #pragma config CPUDIV = NOCLKDIV
 #pragma config LS48MHZ = SYS24X4
 
 
-#pragma config FOSC = ECHIO
+#pragma config FOSC = XT
 #pragma config PCLKEN = ON
 #pragma config FCMEN = OFF
 #pragma config IESO = OFF
 
 
 #pragma config nPWRTEN = OFF
-#pragma config BOREN = SBORDIS
+#pragma config BOREN = OFF
 #pragma config BORV = 190
 #pragma config nLPBOR = OFF
 
@@ -33,7 +33,7 @@
 
 
 #pragma config STVREN = ON
-#pragma config LVP = ON
+#pragma config LVP = OFF
 #pragma config ICPRT = OFF
 #pragma config XINST = OFF
 
@@ -6801,15 +6801,14 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 
 extern char * ftoa(float f, int * status);
 
-# 98 "pic18fmain.c"
-void initialize() {
-TRISA = 0;
-TRISB = 0;
-TRISC = 0;
+# 35 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\signal.h"
+extern void (* signal(int, void (*)(int)))(int);
 
-ADCON0 = 0;
-ADCON1 = 0;
-ADCON2 = 0;
+# 100 "pic18fmain.c"
+void initialize() {
+TRISA = 0x0;
+TRISB = 0x0;
+TRISC = 0x0;
 
 PORTA = 0;
 PORTB = 0;
@@ -6820,9 +6819,8 @@ int main(int argc, char** argv) {
 initialize();
 
 while(1) {
-PORTA = 0b11111111;
-PORTB = 0b11111111;
-PORTC = 0b11111111;
+PORTA = 0x00111111;
+
 }
 
 return (0);

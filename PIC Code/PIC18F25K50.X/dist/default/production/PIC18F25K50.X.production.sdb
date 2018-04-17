@@ -23,9 +23,9 @@
 [v ___flmul __flmul `(d  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"98 C:\Users\junai\MPLABXProjects\PIC18F25K50.X\pic18fmain.c
+"100 C:\Users\junai\Documents\GitHub\Inkjet-Printer\PIC Code\PIC18F25K50.X\pic18fmain.c
 [v _initialize initialize `(v  1 e 1 0 ]
-"112
+"110
 [v _main main `(i  1 e 2 0 ]
 "2793 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f25k50.h
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
@@ -39,19 +39,13 @@
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
 "4597
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
-"8825
-[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
-"8896
-[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
-"8964
-[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-"112 C:\Users\junai\MPLABXProjects\PIC18F25K50.X\pic18fmain.c
+"110 C:\Users\junai\Documents\GitHub\Inkjet-Printer\PIC Code\PIC18F25K50.X\pic18fmain.c
 [v _main main `(i  1 e 2 0 ]
 {
-"122
+"119
 } 0
-"98
+"100
 [v _initialize initialize `(v  1 e 1 0 ]
 {
-"110
+"108
 } 0

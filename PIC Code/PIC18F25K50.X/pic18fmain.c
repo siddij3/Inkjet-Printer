@@ -16,7 +16,6 @@
 // PIC18F25K50 Configuration Bit Settings
 
 // 'C' source line config statements
-
 // CONFIG1L
 #pragma config PLLSEL = PLL4X   // PLL Selection (4x clock multiplier)
 #pragma config CFGPLLEN = OFF   // PLL Enable Configuration bit (PLL Disabled (firmware controlled))
@@ -24,14 +23,14 @@
 #pragma config LS48MHZ = SYS24X4// Low Speed USB mode with 48 MHz system clock (System clock at 24 MHz, USB clock divider is set to 4)
 
 // CONFIG1H
-#pragma config FOSC = ECHIO     // Oscillator Selection (EC oscillator, high power 16MHz to 48MHz)
+#pragma config FOSC = XT        // Oscillator Selection (XT oscillator)
 #pragma config PCLKEN = ON      // Primary Oscillator Shutdown (Primary oscillator enabled)
 #pragma config FCMEN = OFF      // Fail-Safe Clock Monitor (Fail-Safe Clock Monitor disabled)
 #pragma config IESO = OFF       // Internal/External Oscillator Switchover (Oscillator Switchover mode disabled)
 
 // CONFIG2L
 #pragma config nPWRTEN = OFF    // Power-up Timer Enable (Power up timer disabled)
-#pragma config BOREN = SBORDIS  // Brown-out Reset Enable (BOR enabled in hardware (SBOREN is ignored))
+#pragma config BOREN = OFF      // Brown-out Reset Enable (BOR disabled in hardware (SBOREN is ignored))
 #pragma config BORV = 190       // Brown-out Reset Voltage (BOR set to 1.9V nominal)
 #pragma config nLPBOR = OFF     // Low-Power Brown-out Reset (Low-Power Brown-out Reset disabled)
 
@@ -48,7 +47,7 @@
 
 // CONFIG4L
 #pragma config STVREN = ON      // Stack Full/Underflow Reset (Stack full/underflow will cause Reset)
-#pragma config LVP = ON         // Single-Supply ICSP Enable bit (Single-Supply ICSP enabled if MCLRE is also 1)
+#pragma config LVP = OFF        // Single-Supply ICSP Enable bit (Single-Supply ICSP disabled)
 #pragma config ICPRT = OFF      // Dedicated In-Circuit Debug/Programming Port Enable (ICPORT disabled)
 #pragma config XINST = OFF      // Extended Instruction Set Enable bit (Instruction set extension and Indexed Addressing mode disabled)
 
@@ -95,14 +94,13 @@
      * 
      */
 
-    void initialize() {
-        TRISA = 0;
-        TRISB = 0;
-        TRISC = 0;
+#define _XTAL_FREQ 16000000 // 16MHz
+#include <signal.h>
 
-        ADCON0 = 0;
-        ADCON1 = 0;
-        ADCON2 = 0;
+    void initialize() {
+        TRISA = 0x0;
+        TRISB = 0x0;
+        TRISC = 0x0;
 
         PORTA = 0;
         PORTB = 0;
@@ -113,9 +111,8 @@
            initialize();
 
         while(1) {
-            PORTA = 0b11111111;
-            PORTB = 0b11111111;
-            PORTC = 0b11111111; 
+            PORTA = 0x00111111;
+            
         }
 
         return (EXIT_SUCCESS);
