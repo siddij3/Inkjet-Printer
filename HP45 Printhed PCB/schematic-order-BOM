@@ -1,0 +1,17 @@
+Order list for C:/Users/junai/Documents/GitHub/Inkjet-Printer/HP45 Printhed PCB/schematic.sch
+Exported from EAGLE with DesignLink
+
+Quantity	Value	Package	Order code	Manufacturer	Manuf. Code	Availability	Price (from)	Description
+4	0.1µF	C0603	26M8219		B32529C0104J000	11898	0.092	EPCOS - B32529C0104J000 - CAPACITOR POLYESTER FILM FILM 0.1UF, 5%, 63V,
+1	0.33µF	C0603	unknown					
+9	87224-1	HDRV1W68P0_1X1_213X213X1036	unknown					
+1	640454-5	TE_640454-5	unknown					
+1	282837-2	TE_282837-2	unknown					
+1	PIC18F25K50T-I/ML	QFN65P600X600X100-29N	unknown					
+1	L78M05CDT	TO225P972X240-3N	unknown					
+1	100 O	R0805	unknown					
+1	10 KO	R0805	unknown					
+8	5 KO	R0603	unknown					
+2	1000O	R0603	unknown					
+2	CD4504BPWE4	SOP65P640X120-16N	unknown					
+8	DMG1013UWQ-7	SOT65P210X110-3N	unknown					
