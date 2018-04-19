@@ -23,29 +23,64 @@
 [v ___flmul __flmul `(d  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"100 C:\Users\junai\Documents\GitHub\Inkjet-Printer\PIC Code\PIC18F25K50.X\pic18fmain.c
-[v _initialize initialize `(v  1 e 1 0 ]
-"110
-[v _main main `(i  1 e 2 0 ]
-"2793 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f25k50.h
+"103 C:\Users\junai\Documents\GitHub\Inkjet-Printer\PIC Code\PIC18F25K50.X\picmain.c
+[v _main main `(v  1 e 1 0 ]
+"230 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f25k50.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
+"275
+[v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
+"325
+[v _ANSELC ANSELC `VEuc  1 e 1 @3933 ]
+"2793
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
-"2945
-[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
 "3055
 [v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"3236
+[v _WPUB WPUB `VEuc  1 e 1 @3973 ]
+"3470
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3582
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3694
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
 "4153
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "4375
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
 "4597
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
-"110 C:\Users\junai\Documents\GitHub\Inkjet-Printer\PIC Code\PIC18F25K50.X\pic18fmain.c
-[v _main main `(i  1 e 2 0 ]
+"5239
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+"7399
+[v _ACTCON ACTCON `VEuc  1 e 1 @4021 ]
+"11483
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
+"11545
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S36 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"12364
+[s S39 . 1 `uc 1 IOCIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S48 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S53 . 1 `S36 1 . 1 0 `S39 1 . 1 0 `S48 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES53  1 e 1 @4081 ]
+"14050
+[v _PLLRDY PLLRDY `VEb  1 e 0 @32407 ]
+"103 C:\Users\junai\Documents\GitHub\Inkjet-Printer\PIC Code\PIC18F25K50.X\picmain.c
+[v _main main `(v  1 e 1 0 ]
 {
-"119
-} 0
-"100
-[v _initialize initialize `(v  1 e 1 0 ]
-{
-"108
+"162
 } 0
