@@ -9605,8 +9605,10 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="PIC18F" gate="G$1" pin="VSS"/>
 <wire x1="-7.62" y1="-35.56" x2="43.18" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="-35.56" x2="43.18" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<wire x1="43.18" y1="-33.02" x2="43.18" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-35.56" x2="43.18" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="43.18" y="-35.56"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -10269,12 +10271,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="SUPPLY15" gate="GND" pin="GND"/>
 </segment>
 </net>
-<net name="HEAD_A1" class="0">
-<segment>
-<wire x1="-5.08" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
-<label x="-5.08" y="63.5" size="1.4224" layer="95"/>
-</segment>
-</net>
 <net name="HEAD_A2" class="0">
 <segment>
 <pinref part="MOSFET2" gate="G$1" pin="GATE"/>
@@ -10365,6 +10361,13 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="7.62" y1="-12.7" x2="-5.08" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="HEAD_A1" class="0">
+<segment>
+<pinref part="MOSFET1" gate="G$1" pin="GATE"/>
+<wire x1="-5.08" y1="66.04" x2="0" y2="66.04" width="0.1524" layer="91"/>
+<label x="-5.08" y="63.5" size="1.4224" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -10420,6 +10423,34 @@ Source: AVX .. aphvc.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="208,1,33.02,-22.86,GND,sup,,,,"/>
+<approved hash="208,1,-88.9,2.54,GND,sup,,,,"/>
+<approved hash="208,1,43.18,-35.56,GND,sup,,,,"/>
+<approved hash="208,1,-12.7,33.02,GND,sup,,,,"/>
+<approved hash="208,1,-53.34,55.88,GND,out,,,,"/>
+<approved hash="208,1,-2.54,-38.1,GND,sup,,,,"/>
+<approved hash="208,1,-33.02,83.82,GND,sup,,,,"/>
+<approved hash="208,1,-91.44,-17.78,GND,sup,,,,"/>
+<approved hash="208,1,33.02,-5.08,GND,sup,,,,"/>
+<approved hash="208,2,22.86,-15.24,GND,sup,,,,"/>
+<approved hash="208,2,22.86,-66.04,GND,sup,,,,"/>
+<approved hash="208,2,-22.86,0,GND,sup,,,,"/>
+<approved hash="208,2,-22.86,-2.54,GND,sup,,,,"/>
+<approved hash="208,2,-22.86,-53.34,GND,sup,,,,"/>
+<approved hash="208,2,-22.86,-50.8,GND,sup,,,,"/>
+<approved hash="208,3,22.86,71.12,GND,sup,,,,"/>
+<approved hash="208,3,22.86,50.8,GND,sup,,,,"/>
+<approved hash="208,3,22.86,30.48,GND,sup,,,,"/>
+<approved hash="208,3,25.4,10.16,GND,sup,,,,"/>
+<approved hash="208,3,25.4,-10.16,GND,sup,,,,"/>
+<approved hash="208,3,25.4,-30.48,GND,sup,,,,"/>
+<approved hash="208,3,27.94,-50.8,GND,sup,,,,"/>
+<approved hash="208,3,27.94,-71.12,GND,sup,,,,"/>
+<approved hash="208,3,63.5,22.86,GND,sup,,,,"/>
+<approved hash="208,4,-20.32,0,GND,sup,,,,"/>
+<approved hash="108,1,43.18,-35.56,GND,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

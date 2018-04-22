@@ -9813,6 +9813,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-12.7" y1="50.8" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="45.72" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
 <label x="-17.78" y="50.8" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

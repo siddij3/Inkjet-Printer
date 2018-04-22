@@ -9493,7 +9493,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="Q1" library="L78M05CDT" deviceset="L78M05CDT" device=""/>
+<part name="L78M05CDT" library="L78M05CDT" deviceset="L78M05CDT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9564,7 +9564,7 @@ Source: AVX .. aphvc.pdf</description>
 </instance>
 <instance part="SUPPLY19" gate="GND" x="-93.98" y="-17.78" rot="R270"/>
 <instance part="SUPPLY20" gate="GND" x="35.56" y="-5.08" rot="R90"/>
-<instance part="Q1" gate="A" x="-35.56" y="55.88" rot="MR0"/>
+<instance part="L78M05CDT" gate="A" x="-35.56" y="55.88" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -9615,7 +9615,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="33.02" x2="-12.7" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<pinref part="Q1" gate="A" pin="GND"/>
+<pinref part="L78M05CDT" gate="A" pin="GND"/>
 <wire x1="-53.34" y1="55.88" x2="-53.34" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="33.02" x2="-12.7" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-12.7" y="33.02"/>
@@ -9655,7 +9655,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="7.62" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
 <junction x="7.62" y="55.88"/>
-<pinref part="Q1" gate="A" pin="IN"/>
+<pinref part="L78M05CDT" gate="A" pin="IN"/>
 </segment>
 <segment>
 <pinref part="POWER" gate="G$1" pin="1"/>

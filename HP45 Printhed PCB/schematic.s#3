@@ -10320,6 +10320,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="MOSFET8" gate="G$1" pin="GATE"/>
 <wire x1="-5.08" y1="-76.2" x2="2.54" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-5.08" y="-78.74" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -10427,6 +10428,13 @@ Source: AVX .. aphvc.pdf</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,-7.62,5.08,PIC18F,VDD,PICKIT_VDD,,,"/>
+<approved hash="104,1,-7.62,-35.56,PIC18F,VSS,GND,,,"/>
+<approved hash="104,1,-7.62,-38.1,PIC18F,VSS-1,GND,,,"/>
+<approved hash="104,2,22.86,15.24,VSHIFTER1,VCC,SHIFTER_VCC_A,,,"/>
+<approved hash="104,2,22.86,-15.24,VSHIFTER1,VSS,GND,,,"/>
+<approved hash="104,2,22.86,-35.56,VSHIFTER2,VCC,SHIFTER_VCC_P,,,"/>
+<approved hash="104,2,22.86,-66.04,VSHIFTER2,VSS,GND,,,"/>
 <approved hash="208,1,33.02,-22.86,GND,sup,,,,"/>
 <approved hash="208,1,-88.9,2.54,GND,sup,,,,"/>
 <approved hash="208,1,43.18,-35.56,GND,sup,,,,"/>
