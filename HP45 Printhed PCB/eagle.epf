@@ -1,5 +1,5 @@
 [Eagle]
-Version="08 07 01"
+Version="09 00 00"
 Platform="Windows"
 Globals="Globals"
 Desktop="Desktop"
@@ -356,9 +356,7 @@ UsedLibrary="DMG1013UWQ-7.lbr"
 UsedLibrary="CD4504BPWE4.lbr"
 UsedLibrary="282837-2.lbr"
 UsedLibrary="L78M05CDT.lbr"
-UsedLibrary="87224-1.lbr"
 UsedLibrary="PIC18F25K50T-I_ML.lbr"
-UsedLibrary="0926-1-15-20-75-14-11-0.lbr"
 UsedLibrary="640454-5.lbr"
 
 [Win_1]
