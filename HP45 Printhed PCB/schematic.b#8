@@ -2732,7 +2732,7 @@ design rules under a new name.</description>
 <element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1µF" x="23.93" y="44.22" smashed="yes">
 <attribute name="MF" value="" x="23.93" y="44.22" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="B32529C0104J000" x="23.93" y="44.22" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="23.295" y="44.855" size="0.3048" layer="25"/>
+<attribute name="NAME" x="25.305" y="43.145" size="0.3048" layer="25" rot="R180"/>
 <attribute name="OC_NEWARK" value="26M8219" x="23.93" y="44.22" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="23.93" y="44.22" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="23.295" y="42.315" size="0.3048" layer="27"/>
@@ -2786,7 +2786,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="12.87" y="46.02" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MP" value="DMG1013UWQ-7" x="12.87" y="46.02" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="12.87" y="46.02" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="25.2831" y="39.174890625" size="0.3048" layer="25" ratio="10" rot="SR180"/>
+<attribute name="NAME" x="12.974890625" y="46.0169" size="0.3048" layer="25" ratio="10" rot="SR90"/>
 <attribute name="OC_NEWARK" value="unknown" x="12.87" y="46.02" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PACKAGE" value="SOT-323 Diodes Inc." x="12.87" y="46.02" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PRICE" value="0.15 USD" x="12.87" y="46.02" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2798,7 +2798,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="12.87" y="42.37" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MP" value="DMG1013UWQ-7" x="12.87" y="42.37" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="12.87" y="42.37" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="25.2831" y="35.524890625" size="0.3048" layer="25" ratio="10" rot="SR180"/>
+<attribute name="NAME" x="10.9169" y="42.875109375" size="0.3048" layer="25" ratio="10" rot="SR0"/>
 <attribute name="OC_NEWARK" value="unknown" x="12.87" y="42.37" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PACKAGE" value="SOT-323 Diodes Inc." x="12.87" y="42.37" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PRICE" value="0.15 USD" x="12.87" y="42.37" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2822,7 +2822,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="23.52" y="32.57" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="DMG1013UWQ-7" x="23.52" y="32.57" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="23.52" y="32.57" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="11.1069" y="39.415109375" size="0.3048" layer="25" ratio="10" rot="SR0"/>
+<attribute name="NAME" x="24.0069" y="33.515109375" size="0.3048" layer="25" ratio="10" rot="SR0"/>
 <attribute name="OC_NEWARK" value="unknown" x="23.52" y="32.57" size="1.778" layer="27" display="off"/>
 <attribute name="PACKAGE" value="SOT-323 Diodes Inc." x="23.52" y="32.57" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="0.15 USD" x="23.52" y="32.57" size="1.778" layer="27" display="off"/>
@@ -2925,7 +2925,7 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value=" 32 KB Flash, 2048 bytes RAM, 48 MHz Int. Osc, 25 I/0, PIC18 Core, USB 2.0 " x="16.19" y="52.86" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Microchip" x="16.19" y="52.86" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MP" value="PIC18F25K50T-I/ML" x="16.19" y="52.86" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="21.50703125" y="45.95418125" size="0.3048" layer="25" rot="R180"/>
+<attribute name="NAME" x="16.40703125" y="52.85418125" size="0.3048" layer="25" rot="R180"/>
 <attribute name="OC_NEWARK" value="unknown" x="16.19" y="52.86" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PACKAGE" value="QFN-28 Microchip" x="16.19" y="52.86" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PRICE" value="2.47 USD" x="16.19" y="52.86" size="1.778" layer="27" rot="R180" display="off"/>
