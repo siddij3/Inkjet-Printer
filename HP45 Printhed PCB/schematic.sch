@@ -9195,7 +9195,7 @@ Source: AVX .. aphvc.pdf</description>
 <circle x="0" y="0" radius="0.43" width="0.12" layer="51"/>
 <text x="-1.91343125" y="1.91343125" size="1.27563125" layer="25">&gt;NAME</text>
 <circle x="0" y="0" radius="0.905" width="0.05" layer="39"/>
-<pad name="1" x="0" y="0" drill="0.53"/>
+<pad name="1" x="0" y="0" drill="0.55"/>
 </package>
 </packages>
 <symbols>
@@ -9651,13 +9651,13 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="+12V" class="0">
 <segment>
-<wire x1="-17.78" y1="55.88" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="55.88" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
-<wire x1="7.62" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
-<junction x="7.62" y="55.88"/>
 <pinref part="L78M05CDT" gate="A" pin="IN"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="53.34" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="55.88" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-17.78" y="55.88"/>
 </segment>
 <segment>
 <pinref part="POWER" gate="G$1" pin="1"/>
@@ -9810,9 +9810,12 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="50.8" x2="-17.78" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="45.72" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
 <label x="-17.78" y="50.8" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="50.8" x2="-12.7" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="L78M05CDT" gate="A" pin="OUT"/>
+<wire x1="-17.78" y1="50.8" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-12.7" y="50.8"/>
 </segment>
 </net>
 </nets>
@@ -10317,6 +10320,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="MOSFET8" gate="G$1" pin="GATE"/>
 <wire x1="-5.08" y1="-76.2" x2="2.54" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-5.08" y="-78.74" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -10424,6 +10428,13 @@ Source: AVX .. aphvc.pdf</description>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,-7.62,5.08,PIC18F,VDD,PICKIT_VDD,,,"/>
+<approved hash="104,1,-7.62,-35.56,PIC18F,VSS,GND,,,"/>
+<approved hash="104,1,-7.62,-38.1,PIC18F,VSS-1,GND,,,"/>
+<approved hash="104,2,22.86,15.24,VSHIFTER1,VCC,SHIFTER_VCC_A,,,"/>
+<approved hash="104,2,22.86,-15.24,VSHIFTER1,VSS,GND,,,"/>
+<approved hash="104,2,22.86,-35.56,VSHIFTER2,VCC,SHIFTER_VCC_P,,,"/>
+<approved hash="104,2,22.86,-66.04,VSHIFTER2,VSS,GND,,,"/>
 <approved hash="208,1,33.02,-22.86,GND,sup,,,,"/>
 <approved hash="208,1,-88.9,2.54,GND,sup,,,,"/>
 <approved hash="208,1,43.18,-35.56,GND,sup,,,,"/>
@@ -10449,7 +10460,6 @@ Source: AVX .. aphvc.pdf</description>
 <approved hash="208,3,27.94,-71.12,GND,sup,,,,"/>
 <approved hash="208,3,63.5,22.86,GND,sup,,,,"/>
 <approved hash="208,4,-20.32,0,GND,sup,,,,"/>
-<approved hash="108,1,43.18,-35.56,GND,,,,,"/>
 </errors>
 </schematic>
 </drawing>

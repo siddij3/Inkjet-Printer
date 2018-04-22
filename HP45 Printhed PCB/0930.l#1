@@ -58,7 +58,7 @@
 </layers>
 <library>
 <packages>
-<package name="MM_0926-1-15-20-75-14-11-0">
+<package name="0930">
 <circle x="0" y="0" radius="0.915" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="0.43" width="0.12" layer="51"/>
 <text x="-1.91343125" y="1.91343125" size="1.27563125" layer="25">&gt;NAME</text>
@@ -76,13 +76,13 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="0926-1-15-20-75-14-11-0" prefix="J">
+<deviceset name="0930" prefix="J">
 <description>LOW PROFILE SPRING PIN</description>
 <gates>
 <gate name="G$1" symbol="0926-1-15-20-75-14-11-0" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MM_0926-1-15-20-75-14-11-0">
+<device name="" package="0930">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
