@@ -46,12 +46,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _INTCON2bits `VS574 ~T0 @X0 0 e@4081 ]
 "3055
 [v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
-"2793
-[v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
+"2945
+[v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
 [v F5401 `(v ~T0 @X0 1 tf1`ul ]
 "164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
 [v __delay `JF5401 ~T0 @X0 0 e ]
 [p i __delay ]
+"2793 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f25k50.h
+[v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
 "6 picmain.c
 [p x PLLSEL=PLL3X ]
 "7
@@ -87,7 +89,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "30
 [p x T3CMX=RC0 ]
 "31
-[p x SDOMX=RB3 ]
+[p x SDOMX=RC7 ]
 "32
 [p x MCLRE=ON ]
 "35
@@ -5231,38 +5233,95 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;picmain.c: 145: INTCON2bits.nRBPU = 1;
 "145
 [e = . . _INTCON2bits 1 7 -> -> 1 `i `uc ]
-[; ;picmain.c: 148: while(1)
-"148
-[e :U 608 ]
-[; ;picmain.c: 149: {
-"149
-{
-[; ;picmain.c: 150: PORTC = 0b00000001;
+[; ;picmain.c: 150: PORTC = 0b00000111;
 "150
-[e = _PORTC -> -> 1 `i `uc ]
-[; ;picmain.c: 151: PORTA = 0b00000001;
-"151
-[e = _PORTA -> -> 1 `i `uc ]
-[; ;picmain.c: 152: _delay(5);
+[e = _PORTC -> -> 7 `i `uc ]
+[; ;picmain.c: 152: while(1)
 "152
-[e ( __delay (1 -> -> -> 5 `i `l `ul ]
-[; ;picmain.c: 155: PORTA = 0b00000000;
+[e :U 608 ]
+[; ;picmain.c: 153: {
+"153
+{
+[; ;picmain.c: 155: PORTB = 0b00000001;
 "155
-[e = _PORTA -> -> 0 `i `uc ]
-[; ;picmain.c: 156: _delay(5);
+[e = _PORTB -> -> 1 `i `uc ]
+[; ;picmain.c: 156: _delay(22);
 "156
-[e ( __delay (1 -> -> -> 5 `i `l `ul ]
-[; ;picmain.c: 160: _delay(9);
+[e ( __delay (1 -> -> -> 22 `i `l `ul ]
+[; ;picmain.c: 157: PORTA = 0b00000001;
+"157
+[e = _PORTA -> -> 1 `i `uc ]
+[; ;picmain.c: 158: _delay(22);
+"158
+[e ( __delay (1 -> -> -> 22 `i `l `ul ]
+[; ;picmain.c: 159: PORTA = 0b00000000;
+"159
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;picmain.c: 160: _delay(34);
 "160
-[e ( __delay (1 -> -> -> 9 `i `l `ul ]
-"161
+[e ( __delay (1 -> -> -> 34 `i `l `ul ]
+[; ;picmain.c: 162: PORTB = 0b00000010;
+"162
+[e = _PORTB -> -> 2 `i `uc ]
+[; ;picmain.c: 163: _delay(22);
+"163
+[e ( __delay (1 -> -> -> 22 `i `l `ul ]
+[; ;picmain.c: 164: PORTA = 0b00000010;
+"164
+[e = _PORTA -> -> 2 `i `uc ]
+[; ;picmain.c: 165: _delay(22);
+"165
+[e ( __delay (1 -> -> -> 22 `i `l `ul ]
+[; ;picmain.c: 166: PORTA = 0b00000000;
+"166
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;picmain.c: 167: _delay(34);
+"167
+[e ( __delay (1 -> -> -> 34 `i `l `ul ]
+[; ;picmain.c: 169: PORTB = 0b00000100;
+"169
+[e = _PORTB -> -> 4 `i `uc ]
+[; ;picmain.c: 170: _delay(22);
+"170
+[e ( __delay (1 -> -> -> 22 `i `l `ul ]
+[; ;picmain.c: 171: PORTA = 0b00000100;
+"171
+[e = _PORTA -> -> 4 `i `uc ]
+[; ;picmain.c: 172: _delay(22);
+"172
+[e ( __delay (1 -> -> -> 22 `i `l `ul ]
+[; ;picmain.c: 173: PORTA = 0b00000000;
+"173
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;picmain.c: 174: _delay(34);
+"174
+[e ( __delay (1 -> -> -> 34 `i `l `ul ]
+[; ;picmain.c: 176: PORTB = 0b00001000;
+"176
+[e = _PORTB -> -> 8 `i `uc ]
+[; ;picmain.c: 177: _delay(22);
+"177
+[e ( __delay (1 -> -> -> 22 `i `l `ul ]
+[; ;picmain.c: 178: PORTA = 0b00000100;
+"178
+[e = _PORTA -> -> 4 `i `uc ]
+[; ;picmain.c: 179: _delay(22);
+"179
+[e ( __delay (1 -> -> -> 22 `i `l `ul ]
+[; ;picmain.c: 180: PORTA = 0b00000000;
+"180
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;picmain.c: 181: _delay(34);
+"181
+[e ( __delay (1 -> -> -> 34 `i `l `ul ]
+"183
 }
 [e :U 607 ]
-"148
+"152
 [e $U 608  ]
 [e :U 609 ]
-[; ;picmain.c: 161: }
-[; ;picmain.c: 162: }
-"162
+[; ;picmain.c: 183: }
+[; ;picmain.c: 184: }
+"184
 [e :UE 603 ]
 }

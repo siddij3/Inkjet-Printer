@@ -33,6 +33,8 @@
 [v _ANSELC ANSELC `VEuc  1 e 1 @3933 ]
 "2793
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"2945
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
 "3055
 [v _PORTC PORTC `VEuc  1 e 1 @3970 ]
 "3236
@@ -82,5 +84,5 @@
 "103 C:\Users\junai\Documents\GitHub\Inkjet-Printer\PIC Code\PIC18F25K50.X\picmain.c
 [v _main main `(v  1 e 1 0 ]
 {
-"162
+"184
 } 0

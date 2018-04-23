@@ -28,7 +28,7 @@
 #pragma config CCP2MX = RC1    // CCP2 MUX bit->CCP2 input/output is multiplexed with RC1
 #pragma config PBADEN = ON    // PORTB A/D Enable bit->PORTB<5:0> pins are configured as analog input channels on Reset
 #pragma config T3CMX = RC0    // Timer3 Clock Input MUX bit->T3CKI function is on RC0
-#pragma config SDOMX = RB3    // SDO Output MUX bit->SDO function is on RB3
+#pragma config SDOMX = RC7    // SDO Output MUX bit->SDO function is on RC7
 #pragma config MCLRE = ON    // Master Clear Reset Pin Enable->MCLR pin enabled; RE3 input disabled
 
 // CONFIG4L
@@ -144,19 +144,41 @@ void main(void)
     WPUB = 0x00;
     INTCON2bits.nRBPU = 1;
 
+    //PORTC
+    
+    //Level Shifter VCC Always on
+    PORTC = 0b00000111;
     
     while(1)
     {
-        PORTC = 0b00000001;
+        
+        PORTB = 0b00000001;
+        _delay(22);
         PORTA = 0b00000001;
-        _delay(5);
-            
-            
+         _delay(22);
         PORTA = 0b00000000;
-        _delay(5);
-        
-        
-            
-        _delay(9);
+        _delay(34);     
+    
+        PORTB = 0b00000010;
+        _delay(22);
+        PORTA = 0b00000010;
+         _delay(22);
+        PORTA = 0b00000000;
+        _delay(34);
+
+        PORTB = 0b00000100;
+        _delay(22);
+        PORTA = 0b00000100;
+         _delay(22);
+        PORTA = 0b00000000;
+        _delay(34);
+  
+        PORTB = 0b00001000;
+        _delay(22); 
+        PORTA = 0b00000100;
+         _delay(22);
+        PORTA = 0b00000000;
+        _delay(34);
+
     }
 }
