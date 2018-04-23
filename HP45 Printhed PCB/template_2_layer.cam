@@ -32,12 +32,12 @@
             ]
         },
         {
-            "filename_prefix": "HP45",
+            "filename_prefix": "outputs",
             "format_specifier": {
                 "decimal": 4,
                 "integer": 3
             },
-            "generate_job_file": false,
+            "generate_job_file": true,
             "output_type": "gerber",
             "outputs": [
                 {

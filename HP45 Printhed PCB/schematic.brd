@@ -3100,10 +3100,10 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="7.9" y="45.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="8.535" y="47.405" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10Ω" x="25.5" y="38.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="24.665" y="40.235" size="0.3048" layer="25"/>
-<attribute name="SPICEPREFIX" value="R" x="25.5" y="38.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="27.405" y="37.965" size="1.27" layer="27" rot="R90"/>
+<element name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10Ω" x="27.7" y="32.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.865" y="33.835" size="0.3048" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="27.7" y="32.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="29.605" y="31.565" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -3637,10 +3637,10 @@ design rules under a new name.</description>
 <signal name="N$13">
 <contactref element="R14" pad="2"/>
 <contactref element="VSHIFTER1" pad="13"/>
-<wire x1="25.5" y1="39.45" x2="23.80826875" y2="39.45" width="0.1524" layer="1"/>
-<wire x1="23.80826875" y1="39.45" x2="23.67966875" y2="39.3214" width="0.1524" layer="1"/>
-<wire x1="23.67966875" y1="39.3214" x2="23.0464" y2="39.3214" width="0.1524" layer="1"/>
-<wire x1="23.0464" y1="39.3214" x2="22.83" y2="39.105" width="0.1524" layer="1"/>
+<wire x1="22.83" y1="39.105" x2="23.0464" y2="38.8886" width="0.1524" layer="1"/>
+<wire x1="23.0464" y1="38.8886" x2="23.67966875" y2="38.8886" width="0.1524" layer="1"/>
+<wire x1="23.67966875" y1="38.8886" x2="27.7" y2="34.86826875" width="0.1524" layer="1"/>
+<wire x1="27.7" y1="34.86826875" x2="27.7" y2="33.05" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="R13" pad="2"/>
