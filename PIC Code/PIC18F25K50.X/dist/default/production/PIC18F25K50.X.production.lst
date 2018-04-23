@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Mon Apr 23 16:43:45 2018
+                                                                                               Mon Apr 23 16:49:17 2018
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	18F25K50
@@ -208,8 +208,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    194  007F6E                     l48:
    195                           
    196                           ;picmain.c: 153: {
-   197                           ;picmain.c: 155: PORTB = 0b00000001;
-   198  007F6E  0E01               	movlw	1
+   197                           ;picmain.c: 155: PORTB = 0b00001110;
+   198  007F6E  0E0E               	movlw	14
    199  007F70  6E81               	movwf	3969,c	;volatile
    200                           
    201                           ;picmain.c: 156: _delay(22);
@@ -219,8 +219,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    205  007F76  D7FE               	bra	u27
    206  007F78  F000               	nop	
    207                           
-   208                           ;picmain.c: 157: PORTA = 0b00000001;
-   209  007F7A  0E01               	movlw	1
+   208                           ;picmain.c: 157: PORTA = 0b00001110;
+   209  007F7A  0E0E               	movlw	14
    210  007F7C  6E80               	movwf	3968,c	;volatile
    211                           
    212                           ;picmain.c: 158: _delay(22);
@@ -230,8 +230,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    216  007F82  D7FE               	bra	u37
    217  007F84  F000               	nop	
    218                           
-   219                           ;picmain.c: 159: PORTA = 0b00000000;
-   220  007F86  0E00               	movlw	0
+   219                           ;picmain.c: 159: PORTA = 0b00001111;
+   220  007F86  0E0F               	movlw	15
    221  007F88  6E80               	movwf	3968,c	;volatile
    222                           
    223                           ;picmain.c: 160: _delay(34);
@@ -241,8 +241,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    227  007F8E  D7FE               	bra	u47
    228  007F90  F000               	nop	
    229                           
-   230                           ;picmain.c: 162: PORTB = 0b00000010;
-   231  007F92  0E02               	movlw	2
+   230                           ;picmain.c: 162: PORTB = 0b00001101;
+   231  007F92  0E0D               	movlw	13
    232  007F94  6E81               	movwf	3969,c	;volatile
    233                           
    234                           ;picmain.c: 163: _delay(22);
@@ -252,8 +252,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    238  007F9A  D7FE               	bra	u57
    239  007F9C  F000               	nop	
    240                           
-   241                           ;picmain.c: 164: PORTA = 0b00000010;
-   242  007F9E  0E02               	movlw	2
+   241                           ;picmain.c: 164: PORTA = 0b00001101;
+   242  007F9E  0E0D               	movlw	13
    243  007FA0  6E80               	movwf	3968,c	;volatile
    244                           
    245                           ;picmain.c: 165: _delay(22);
@@ -263,8 +263,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    249  007FA6  D7FE               	bra	u67
    250  007FA8  F000               	nop	
    251                           
-   252                           ;picmain.c: 166: PORTA = 0b00000000;
-   253  007FAA  0E00               	movlw	0
+   252                           ;picmain.c: 166: PORTA = 0b00001111;
+   253  007FAA  0E0F               	movlw	15
    254  007FAC  6E80               	movwf	3968,c	;volatile
    255                           
    256                           ;picmain.c: 167: _delay(34);
@@ -274,8 +274,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    260  007FB2  D7FE               	bra	u77
    261  007FB4  F000               	nop	
    262                           
-   263                           ;picmain.c: 169: PORTB = 0b00000100;
-   264  007FB6  0E04               	movlw	4
+   263                           ;picmain.c: 169: PORTB = 0b00001011;
+   264  007FB6  0E0B               	movlw	11
    265  007FB8  6E81               	movwf	3969,c	;volatile
    266                           
    267                           ;picmain.c: 170: _delay(22);
@@ -285,8 +285,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    271  007FBE  D7FE               	bra	u87
    272  007FC0  F000               	nop	
    273                           
-   274                           ;picmain.c: 171: PORTA = 0b00000100;
-   275  007FC2  0E04               	movlw	4
+   274                           ;picmain.c: 171: PORTA = 0b00001011;
+   275  007FC2  0E0B               	movlw	11
    276  007FC4  6E80               	movwf	3968,c	;volatile
    277                           
    278                           ;picmain.c: 172: _delay(22);
@@ -296,8 +296,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    282  007FCA  D7FE               	bra	u97
    283  007FCC  F000               	nop	
    284                           
-   285                           ;picmain.c: 173: PORTA = 0b00000000;
-   286  007FCE  0E00               	movlw	0
+   285                           ;picmain.c: 173: PORTA = 0b00001111;
+   286  007FCE  0E0F               	movlw	15
    287  007FD0  6E80               	movwf	3968,c	;volatile
    288                           
    289                           ;picmain.c: 174: _delay(34);
@@ -307,8 +307,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    293  007FD6  D7FE               	bra	u107
    294  007FD8  F000               	nop	
    295                           
-   296                           ;picmain.c: 176: PORTB = 0b00001000;
-   297  007FDA  0E08               	movlw	8
+   296                           ;picmain.c: 176: PORTB = 0b00000111;
+   297  007FDA  0E07               	movlw	7
    298  007FDC  6E81               	movwf	3969,c	;volatile
    299                           
    300                           ;picmain.c: 177: _delay(22);
@@ -318,8 +318,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    304  007FE2  D7FE               	bra	u117
    305  007FE4  F000               	nop	
    306                           
-   307                           ;picmain.c: 178: PORTA = 0b00000100;
-   308  007FE6  0E04               	movlw	4
+   307                           ;picmain.c: 178: PORTA = 0b00000111;
+   308  007FE6  0E07               	movlw	7
    309  007FE8  6E80               	movwf	3968,c	;volatile
    310                           
    311                           ;picmain.c: 179: _delay(22);
@@ -329,8 +329,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    315  007FEE  D7FE               	bra	u127
    316  007FF0  F000               	nop	
    317                           
-   318                           ;picmain.c: 180: PORTA = 0b00000000;
-   319  007FF2  0E00               	movlw	0
+   318                           ;picmain.c: 180: PORTA = 0b00001111;
+   319  007FF2  0E0F               	movlw	15
    320  007FF4  6E80               	movwf	3968,c	;volatile
    321                           
    322                           ;picmain.c: 181: _delay(34);
@@ -460,7 +460,7 @@ SFR                  0      0       0     200        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Mon Apr 23 16:43:45 2018
+Symbol Table                                                                                   Mon Apr 23 16:49:17 2018
 
                      l46 7F3A                       l48 7F6E                       u27 7F74  
                      u37 7F80                       u47 7F8C                       u57 7F98  

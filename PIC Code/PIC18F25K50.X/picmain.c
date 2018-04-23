@@ -152,32 +152,32 @@ void main(void)
     while(1)
     {
         
-        PORTB = 0b00000001;
+        PORTB = 0b00001110;
         _delay(22);
-        PORTA = 0b00000001;
+        PORTA = 0b00001110;
          _delay(22);
-        PORTA = 0b00000000;
+        PORTA = 0b00001111;
         _delay(34);     
     
-        PORTB = 0b00000010;
+        PORTB = 0b00001101;
         _delay(22);
-        PORTA = 0b00000010;
+        PORTA = 0b00001101;
          _delay(22);
-        PORTA = 0b00000000;
+        PORTA = 0b00001111;
         _delay(34);
 
-        PORTB = 0b00000100;
+        PORTB = 0b00001011;
         _delay(22);
-        PORTA = 0b00000100;
+        PORTA = 0b00001011;
          _delay(22);
-        PORTA = 0b00000000;
+        PORTA = 0b00001111;
         _delay(34);
   
-        PORTB = 0b00001000;
+        PORTB = 0b00000111;
         _delay(22); 
-        PORTA = 0b00000100;
+        PORTA = 0b00000111;
          _delay(22);
-        PORTA = 0b00000000;
+        PORTA = 0b00001111;
         _delay(34);
 
     }
