@@ -154,28 +154,28 @@ void main(void)
         
         PORTB = 0b00001110;
         _delay(22);
-        PORTA = 0b00001110;
+        PORTA = 0b00000010;
          _delay(22);
         PORTA = 0b00001111;
         _delay(34);     
     
         PORTB = 0b00001101;
         _delay(22);
-        PORTA = 0b00001101;
+        PORTA = 0b00000000;
          _delay(22);
         PORTA = 0b00001111;
         _delay(34);
 
         PORTB = 0b00001011;
         _delay(22);
-        PORTA = 0b00001011;
+        PORTA = 0b00000000;
          _delay(22);
         PORTA = 0b00001111;
         _delay(34);
   
         PORTB = 0b00000111;
         _delay(22); 
-        PORTA = 0b00000111;
+        PORTA = 0b00000000;
          _delay(22);
         PORTA = 0b00001111;
         _delay(34);
